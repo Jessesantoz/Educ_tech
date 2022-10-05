@@ -20,6 +20,9 @@ function routes(app) {
         res.render(__dirname + '/view/tutoriais')
     })
 
+    app.get('/participe', function(req, res) {
+        res.render(__dirname + '/view/participe')
+    })
 }
 
 module.exports = routes
