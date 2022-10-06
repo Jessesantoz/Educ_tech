@@ -20,7 +20,14 @@
         </nav>
     </header>
 
-    <main class="conteudo"></main>
+    <main class="conteudo">
+        <section class="lista">
+            <h1 class="lista-text">Comunidade:</h1>
+            <% for(let i = 0; i < ListaComunidade.length; i++) { %>
+                <a> <%= ListaComunidade[i].nome %></a><br/>
+              <% }%>
+        </section>
+    </main>
 
 </body>
 
