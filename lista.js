@@ -22,4 +22,4 @@ const ListaComunidade = [
 
 ]
 
-module.exports = ListaComunidade
+module.exports = ListaComunidade;
