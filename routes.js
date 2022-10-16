@@ -1,27 +1,29 @@
+const lista = require("./db/lista")
+
 function routes(app) {
 
     app.get('/', function(req, res) {
-        res.render(__dirname + '/view/index')
+        res.render('index')
     })
 
     app.get('/comunidade', function(req, res) {
-        res.render(__dirname + '/view/comunidade')
+        res.render('comunidade', {lista: lista})
     })
 
     app.get('/autores', function(req, res) {
-        res.render(__dirname + '/view/autores')
+        res.render('autores')
     })
 
     app.get('/ferramentas', function(req, res) {
-        res.render(__dirname + '/view/ferramentas')
+        res.render('ferramentas')
     })
 
     app.get('/tutoriais', function(req, res) {
-        res.render(__dirname + '/view/tutoriais')
+        res.render('tutoriais')
     })
 
     app.get('/participe', function(req, res) {
-        res.render(__dirname + '/view/participe')
+        res.render('participe')
     })
 }
 
