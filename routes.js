@@ -1,4 +1,5 @@
 const lista = require("./db/lista")
+const ferramentas = require("./db/ferramentas")
 
 function routes(app) {
 
@@ -15,7 +16,7 @@ function routes(app) {
     })
 
     app.get('/ferramentas', function(req, res) {
-        res.render('ferramentas')
+        res.render('ferramentas', {ferramentas: ferramentas})
     })
 
     app.get('/tutoriais', function(req, res) {

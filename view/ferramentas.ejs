@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educ_tech</title>
-    <link rel="stylesheet" type="text/css" href="/style_ferramentas.css">
+    <link rel="stylesheet" type="text/css" href="/ferramentas.css">
     <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 
@@ -23,13 +23,11 @@
     <main class="conteudo">
         <section class="ferramenta">
             <div class="ferramenta-caixa">
-                <h1 class="ferramenta-titulo"></h1>
-                <p class="ferramenta-paragrafo"></p>
-                <a class="ferramenta-img" href=""> <img src="" alt=""> </a>
-                <a class="ferramenta-img" href=""> <img src="" alt=""> </a>
-                <a class="ferramenta-img" href=""> <img src="" alt=""> </a>
-                <a class="ferramenta-img" href=""> <img src="" alt=""> </a>
-                <a class="ferramenta-img" href=""> <img src="" alt=""> </a>
+                <h1 class="ferramenta-titulo"> Adicione as melhores tecnologias ao processo de aprendizagem: </h1>
+                <p class="ferramenta-paragrafo">Encontre os melhores sites e melhores tecnologias que facilitam e auxiliam o ensino.</p>
+                <% for(let i = 0; i < ferramentas.length; i++) { %>
+                <a class="ferramenta-lista" href=""> <%= ferramentas[i].titulo %> </a> <br>
+                <% }%>
             </div>
         </section>
     </main>
