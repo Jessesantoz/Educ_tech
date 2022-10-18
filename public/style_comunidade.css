@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px;
+    padding: 65px;
 }
 
 .lista {
@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     color: #fff2e73d;
-    padding: 64px;
+    padding: 24px;
 }
 
 .lista-text {
@@ -23,8 +23,14 @@
 }
 
 .lista-paragrafo {
-    font-family: 'Sarala', sans-serif;
-    color: #FFF2E7;
+    font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 18px;
+    color: #fff2e793;
+    font-size: 24px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.lista-paragrafo:hover {
+    transform: scale(1.1);
 }

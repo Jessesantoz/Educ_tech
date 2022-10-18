@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educ_tech</title>
-    <link rel="stylesheet" type="text/css" href="/style_autores.css">
+    <link rel="stylesheet" type="text/css" href="/autores.css">
     <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 
@@ -21,16 +21,11 @@
     </header>
 
     <main class="conteudo">
-        <section class="autores">
-            <div class="autores-caixa">
-                <h1 class="autores-titulo"></h1>
-                <p class="autores-paragrafo"></p>
-                <a class="autores-img" href=""> <img src="" alt=""> </a>
-                <a class="autores-img" href=""> <img src="" alt=""> </a>
-                <a class="autores-img" href=""> <img src="" alt=""> </a>
-                <a class="autores-img" href=""> <img src="" alt=""> </a>
-                <a class="autores-img" href=""> <img src="" alt=""> </a>
-            </div>
+        <section class="lista">
+            <h1 class="lista-text">Autores e produtores:</h1>
+            <% for(let i = 0; i < lista.length; i++) { %>
+                <p class="lista-paragrafo"><%= lista[i].nome %></p>
+              <% }%>
         </section>
     </main>
 
