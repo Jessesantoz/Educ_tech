@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px;
+    margin-bottom: 20px;
 }
 
 .lista {
@@ -12,9 +12,44 @@
     align-items: center;
     color: #fff2e73d;
     padding: 64px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.644);
+    margin-top: 10px;
+    background-color: #fff2e7ef;
 }
 
 .lista-text {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 28px;
+    color: #2c1619;
+    margin-bottom: 16px;
+}
+
+.lista-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    color: #2c1619;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.lista-agradecimento {
+    font-family: 'Sarala', sans-serif;
+    color: #221113;
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: 14px;
+}
+
+.colaborar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff2e73d;
+    padding: 64px;
+}
+
+.colabore-text {
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 28px;
@@ -22,9 +57,24 @@
     margin-bottom: 16px;
 }
 
-.lista-paragrafo {
+.colabore-paragrafo {
     font-family: 'Sarala', sans-serif;
-    color: #FFF2E7;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
+    color: #FFF2E7;
+    margin-bottom: 16px;
+}
+
+.colabore-button {
+    background-color: #ECD6C4;
+    width: 185px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    color: #2F2325;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
 }
