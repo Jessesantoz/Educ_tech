@@ -1,4 +1,5 @@
 const lista = require("./db/lista")
+const colaboradores = require("./db/colaboradores")
 const ferramentas = require("./db/ferramentas")
 
 function routes(app) {
@@ -27,32 +28,8 @@ function routes(app) {
         res.render('participe')
     })
 
-    app.post('/paraticipe', (req, res) => {
-        const {nome, participacao} = req.body
-        const errors = []
-
-        console.log(req.body)
-
-        if (!nome) {
-            errors.push("O nome é obrigatorio")
-        } 
-        if (!participacao){
-            errors.push("A participação é obrigatoria")
-        }
-    
-        const novoNome = {
-            nome,
-            participacao
-        }
-
-        if (errors.length > 0) {
-            res.status(401).json({msgs: errors})
-            return
-        }
-    
-        lista.push(novoNome)
-        res.status(200).json({msg: 'dados gravados com sucesso'})
-        //res.render('confirmação')
+    app.get('/colaboradores', function(req, res) {
+        res.render('colaboradores', {colaboradores: colaboradores})
     })
 
 }

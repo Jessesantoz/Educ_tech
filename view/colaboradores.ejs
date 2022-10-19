@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educ_tech</title>
+    <link rel="stylesheet" type="text/css" href="/colaboradores.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <a href="http://localhost:8000/"> <img class="img_cabeçalho" src="/img_cabeçalho.png" alt="logo"> </a>
+        <nav class= "cabeçalho_geral">
+            <a class="button_cabeçalho" href="http://localhost:8000/comunidade">Comunidade</a>
+            <a class="button_cabeçalho" href="http://localhost:8000/Tutoriais">Tutoriais</a>
+            <a class="button_cabeçalho" href="http://localhost:8000/ferramentas">Ferramentas</a>
+            <a class="button_cabeçalho" href="http://localhost:8000/autores">Autores</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="lista">
+            <h1 class="lista-text">Colaboradores do mês:</h1>
+            <% for(let i = 0; i < colaboradores.length; i++) { %>
+                <p class="lista-paragrafo"><%= colaboradores[i].nome %></p>
+              <% }%>
+        </section>
+    </main>
+
+</body>
+
+</html>
