@@ -40,3 +40,15 @@
 .ferramenta-lista:hover {
     transform: scale(1.1);
 }
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+
+}
+
+.rodape-img {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
