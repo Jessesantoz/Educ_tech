@@ -16,6 +16,21 @@ const lista = [
      },
 
      {
+        nome: 'Judas',
+        participacao: 'organizador'
+    },
+
+    {
+        nome: 'Silas',
+        participacao: 'organizador'
+    },
+
+    {
+        nome: 'Caio',
+        participacao: 'organizador'
+    },
+
+     {
         nome: 'Lucas',
         participacao: 'organizador'
     }
