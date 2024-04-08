@@ -1,6 +1,7 @@
 const lista = require("./db/lista")
 const colaboradores = require("./db/colaboradores")
 const ferramentas = require("./db/ferramentas")
+const artigos = require("./db/artigos")
 
 function routes(app) {
 
@@ -22,6 +23,10 @@ function routes(app) {
 
     app.get('/tutoriais', function(req, res) {
         res.render('tutoriais')
+    })
+
+    app.get('/artigo', function(req, res) {
+        res.render('artigo', {artigos: artigos})
     })
 
     app.get('/participe', function(req, res) {
