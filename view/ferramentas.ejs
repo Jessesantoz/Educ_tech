@@ -26,7 +26,7 @@
                 <h1 class="ferramenta-titulo"> Adicione as melhores tecnologias ao processo de aprendizagem: </h1>
                 <p class="ferramenta-paragrafo">Encontre os melhores sites e melhores tecnologias que facilitam e auxiliam o ensino.</p>
                 <% for(let i = 0; i < ferramentas.length; i++) { %>
-                <a class="ferramenta-lista" href=""> <%= ferramentas[i].titulo %> </a> <br>
+                <a class="ferramenta-lista" href="/artigo/<% ferramentas[i].titulo %>"> <%= ferramentas[i].titulo %> </a> <br>
                 <% }%>
             </div>
         </section>

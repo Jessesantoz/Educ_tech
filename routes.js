@@ -1,7 +1,7 @@
 const lista = require("./db/lista")
 const colaboradores = require("./db/colaboradores")
 const ferramentas = require("./db/ferramentas")
-const artigos = require("./db/artigos")
+
 
 function routes(app) {
 
@@ -25,8 +25,14 @@ function routes(app) {
         res.render('tutoriais')
     })
 
-    app.get('/artigo', function(req, res) {
-        res.render('artigo', {artigos: artigos})
+    app.get('/artigo/:indice', function(req, res) {
+        const indice = req.params.indice
+
+        for(let i =0; i<ferramentas.length; i++){
+            if(indice.toLocaleUpperCase() == (ferramentas[i].titulo).toLocaleUpperCase()){
+        res.render('artigo', { ferramentas: ferramentas[i] })
+            }
+        }
     })
 
     app.get('/participe', function(req, res) {
