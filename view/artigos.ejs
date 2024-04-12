@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educ_tech</title>
-    <link rel="stylesheet" type="text/css" href="/autores.css">
+    <link rel="stylesheet" type="text/css" href="/ferramentas.css">
     <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 
@@ -22,11 +22,14 @@
     </header>
 
     <main class="conteudo">
-        <section class="lista">
-            <h1 class="lista-text">Autores e produtores:</h1>
-            <% for(let i = 0; i < lista.length; i++) { %>
-                <p class="lista-paragrafo"><%= lista[i].nome %></p>
-              <% }%>
+        <section class="ferramenta">
+            <div class="ferramenta-caixa">
+                <h1 class="ferramenta-titulo"> Adicione as melhores tecnologias ao processo de aprendizagem: </h1>
+                <p class="ferramenta-paragrafo">Encontre os melhores sites e melhores tecnologias que facilitam e auxiliam o ensino.</p>
+                <% for(let i = 0; i < artigos.length; i++) { %>
+                <a class="ferramenta-lista" href="/artigo/<%= artigos[i].titulo %>"> <%= artigos[i].titulo %> </a> <br>
+                <% }%>
+            </div>
         </section>
     </main>
 
